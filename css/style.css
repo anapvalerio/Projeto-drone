@@ -64,12 +64,6 @@ header {
     z-index: -1;
 }
 
-h1,
-h2,
-h3 {
-    font-weight: 60px;
-}
-
 a {
     text-decoration: none;
     color: var(--cor-branca);
@@ -84,6 +78,7 @@ a {
     justify-content: center;
     justify-content: space-between;
 }
+
 
 
 body {
@@ -134,7 +129,26 @@ body {
     background-color: #dddbdb;
     min-height: 100vh;
     max-height: 100vh;
-    width: 100%;
+    width: 100vw;
+
+    line-height: 3;
+}
+
+#funcoes h1 {
+    font-size: 20px !important;
+    width: 100vw;
+
+    text-align: center;
+}
+
+#funcoes h2 {
+    font-size: 35px !important;
+
+    height: 50px;
+}
+
+#funcoes p {
+    font-size: 23px !important;
 }
 
 #especificacoes {
@@ -142,6 +156,15 @@ body {
     min-height: 100vh;
     max-height: 100vh;
     width: 100%;
+
+    display: flex;
+    font-display: row;
+    flex-wrap: wrap;
+}
+
+.cards-especificacoes {
+    height: 48vh !important;
+    width: 30vw !important;
 }
 
 #depoimentos {
@@ -151,22 +174,96 @@ body {
     width: 100%;
 }
 
+.area-depoimentos {
+    width: 100vw;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center !important;
+  
+}
+
+.bloco1 {
+    padding: 0 !important;
+    width: 55vw !important;
+    height: 60vh !important;
+}
+
+.bloco1 img {
+    height: 350px !important;
+}
+.texto-1  {
+    width: 30vw;
+}
+
+.texto-1 h1 {
+    font-size: 40px !important;
+}
+
+.texto-1 h2 {
+    font-size: 25px !important;
+}
+
+.texto-1 p {
+    font-size: 15px !important;
+}
+
+.bloco2{
+    width: 30vw !important;
+    height: 60vh !important;
+}
+
+.texto-2 h1 {
+    width: 100% !important;
+    font-size: 40px !important;
+}
+
+
+
+
+
+
+
+
 #agende {
     background-color: #b747ab;
     min-height: 100vh;
     max-height: 100vh;
     width: 100%;
+    
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+
+    gap: 8vw;
+}
+
+.textos-agende {
+    width: 40vw;
+}
+
+.topo h1 {
+    font-size: 50px !important;
+}
+
+.topo h2 {
+    font-size: 30px !important;
+}
+
+.meio p {
+    font-size: 25px;
+}
+
+.baixo p {
+    font-size: 25px;
 }
 
 .formulario {
-    width: 50%;
-     border-radius: 10px;
+    width: 35%;
+    border-radius: 10px !important;
 }
+
 
 
 }
@@ -221,6 +318,8 @@ header {
     z-index: 2;
 }
 
+
+
 .textos-cabecalho {
     width: 95%;
     padding: 10px;
@@ -273,7 +372,6 @@ a {
     justify-content: center;
     justify-content: space-between;
 }
-
 
 body {
     margin: 0;
