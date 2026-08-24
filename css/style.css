@@ -1,251 +1,55 @@
-/* mínimo de 768, então é para computador*/
+/* =========================================================
+   RESET / CONFIGURAÇÕES GERAIS
+   ========================================================= */
 
-@media (min-width: 768px) {
-    :root {
-    /*RESET*/
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
 
-    /*COR E FONTE*/
-    --cor-primaria: #042000;
-    --cor-secundaria: #15560b;
+:root {
+    /* CORES */
+    --cor-primaria: #020e00;
+    --cor-secundaria: #2e8d20;
     --cor-branca: #dddbdb;
+    --cor-cinza: rgb(44, 42, 42);
+
+    /* FONTE */
     --fonte-principal: 'Roboto', sans-serif;
 
-    /*MEDIDAS*/
+    /* ESPAÇAMENTOS */
     --espacamento-pequeno: 0.5rem;
     --espacamento-medio: 1rem;
-    --espacamento-grande: 2em;
-}
-
-header {
-    padding: 0px;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
+    --espacamento-grande: 2rem;
 }
 
 
-/*CABEÇALHO*/
-.container {
-    height: 50px;
-    width: 100%;
-    font-size: 20px;
-    background-color: var(--cor-primaria);
+/* =========================================================
+   CONFIGURAÇÕES GERAIS
+   ========================================================= */
 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    z-index: 2;
+html {
+    scroll-behavior: smooth;
 }
-
-.textos-cabecalho {
-    width: 95%;
-    padding: 10px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.video-fundo {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    z-index: -1;
-}
-
-h1,
-h2,
-h3 {
-    font-weight: 60px;
-}
-
-a {
-    text-decoration: none;
-    color: var(--cor-branca);
-}
-
-.opcoes {
-    height: 100%;
-    width: 40%;
-
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-between;
-}
-
 
 body {
     margin: 0;
     background-color: var(--cor-primaria);
     font-family: var(--fonte-principal);
-    line-height: 0.6;
+    line-height: 1;
 }
 
-#destaque {
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.562);
-
-}
-
-#destaque .texto {
-    height: 300px;
-    font-size: 20px;
+h1,
+h2,
+h3,
+p {
     color: var(--cor-branca);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    position: relative;
-
-}
-
-.btn {
-    padding: 8px 12px;
-    border-radius: 4px;
-    font-weight: 500;
-}
-
-.btn-cta {
-    background-color: var(--cor-secundaria);
-    color: var(--cor-branca);
-}
-
-#funcoes {
-    background-color: #dddbdb;
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-}
-
-#especificacoes {
-    background-color: #caf194;
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-}
-
-#depoimentos {
-    background-color: #398576;
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-}
-
-#agende {
-    background-color: #b747ab;
-    min-height: 100vh;
-    max-height: 100vh;
-    width: 100%;
-}
-
-
-}
-
-
-
-
-
-
-
- /* PARA DESKTOP */
-
-:root {
-    /*RESET*/
-    margin: 0;
-    padding: 0;
-
-    /*COR E FONTE*/
-    --cor-primaria: #020e00;
-    --cor-secundaria: #15560b;
-    --cor-branca: #dddbdb;
-    --cor-cinza: rgb(44, 42, 42);
-    --fonte-principal: 'Roboto', sans-serif;
-
-    /*MEDIDAS*/
-    --espacamento-pequeno: 0.5rem;
-    --espacamento-medio: 1rem;
-    --espacamento-grande: 2em;
-}
-
-header {
-    padding: 0px;
-    margin-top: 0;
-    display: flex;
-    justify-content: center;
-}
-
-
-/*CABEÇALHO*/
-.container {
-    height: 50px;
-    width: 100%;
-    font-size: 20px;
-    background-color: var(--cor-primaria);
-
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-
-    position: fixed;
-    z-index: 2;
-}
-
-.textos-cabecalho {
-    width: 95%;
-    padding: 10px;
-
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.video-fundo {
-    position: absolute;
-    top: 0;
-    left: 0;
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-    z-index: -1;
-}
-
-
-.video-fundo-drone {
-    position: relative;
-
-    width: 100%;
-    height: 100vh;
-    object-fit: cover;
 }
 
 h1,
 h2,
 h3 {
-    color: var(--cor-branca);
     font-weight: 600;
 }
 
@@ -254,60 +58,147 @@ a {
     color: var(--cor-branca);
 }
 
-.opcoes {
-    height: 100%;
-    width: 40%;
+
+/* =========================================================
+   CABEÇALHO
+   ========================================================= */
+
+header {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 50px;
+
+    background-color: var(--cor-primaria);
 
     display: flex;
     align-items: center;
     justify-content: center;
+
+    font-size: 20px;
+
+    z-index: 10;
+}
+
+.textos-cabecalho {
+    width: 95%;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 
-body {
-    margin: 0;
-    background-color: var(--cor-primaria);
-    font-family: var(--fonte-principal);
-    line-height: 0.6;
+/* =========================================================
+   VÍDEO DE FUNDO
+   ========================================================= */
+
+.video-fundo {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    z-index: -1;
 }
 
-#destaque {
-    min-height: 100vh;
-    max-height: 100vh;
+.video-fundo-drone {
+    position: relative;
+
     width: 100%;
+    height: 100vh;
+
+    object-fit: cover;
+}
+
+
+/* =========================================================
+   MENU MOBILE
+   ========================================================= */
+
+/*
+   No celular as opções do menu ficam escondidas.
+   No desktop elas serão exibidas no @media abaixo.
+*/
+
+.opcoes {
+    display: none;
+}
+
+.lado-direito {
+    display: none;
+}
+
+
+/* =========================================================
+   SEÇÃO DE DESTAQUE
+   ========================================================= */
+
+#destaque {
+    position: relative;
+
+    width: 100%;
+    min-height: 100vh;
+
+    background-color: rgba(0, 0, 0, 0.562);
 
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-
-    position: relative;
-    background-color: rgba(0, 0, 0, 0.562);
-
+    
 }
 
 #destaque .texto {
-    border: 1px solid red;
+    position: relative;
+    z-index: 1;
+
     height: 300px;
 
-    font-size: 2rem;
+    padding: 20px;
+
     color: var(--cor-branca);
+
+    font-size: 2rem;
+    line-height: 1;
 
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-    line-height: 1;
-    
-    z-index: 1;
-    position: relative;
+    justify-content: center;
 
+    text-align: center;
+    gap: 5vh;
 }
+
+.texto p {
+    font-size: 25px;
+}
+
+
+/* =========================================================
+   BOTÕES
+   ========================================================= */
 
 .btn {
     padding: 8px 12px;
+
     border-radius: 4px;
+
     font-weight: 500;
 }
 
@@ -316,61 +207,80 @@ body {
     color: var(--cor-branca);
 }
 
+
+/* =========================================================
+   SEÇÃO FUNÇÕES
+   ========================================================= */
+
 #funcoes {
-    background-color: var(--cor-primaria);
-    min-height: 100vh;
-    max-height: 100vh;
     width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--cor-primaria);
+
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
-    line-height: 3;
+    line-height: 1;
 }
 
-#funcoes h2 {
-    font-size: 25px;
+.textos-funcoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 5vh;
+}
+#funcoes h1 {
     width: 95%;
 
+    font-size: 25px;
     line-height: 1.3;
+
     text-align: center;
 }
 
-#funcoes h3 {
+#funcoes h2 {
     font-size: 20px;
 }
 
 #funcoes p {
-    font-size: 20px;
     width: 90%;
+
+    font-size: 20px;
     line-height: 1;
+
     text-align: center;
 }
 
-#funcoes h2, h3, p {
-    color: var(--cor-branca);
-}
 
-
+/* =========================================================
+   SEÇÃO ESPECIFICAÇÕES
+   ========================================================= */
 
 #especificacoes {
-    min-height: 100vh;
     width: 100%;
+    min-height: 100vh;
+
     background-color: var(--cor-primaria);
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
 
     justify-content: space-evenly;
+    align-items: center;
 }
 
 #especificacoes h1 {
-    color: var(--cor-branca);
     width: 90%;
-    font-size:25px;
+
+    color: var(--cor-branca);
+
+    font-size: 25px;
     line-height: 1;
 }
 
@@ -380,109 +290,425 @@ body {
 }
 
 .cards-especificacoes {
-    background-color: var(--cor-cinza);
-   border: 3px solid var(--cor-primaria);
-
+    width: min(460px, 99%);
     height: 50vh;
-    width: 460px;
-    padding-left: 20px;
-    padding-right: 20px;
+
+    padding: 0 20px;
+
+    background-color: var(--cor-cinza);
+    border: 3px solid var(--cor-primaria);
 
     text-align: left;
+
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
 
-#depoimentos {
-    background-image: url(/img/img/Imagem\ 3.jpg);
-    background-size: cover;
-    background-position: absolute;
-    background-repeat: no-repeat;
-   
+/* =========================================================
+   SEÇÃO DEPOIMENTOS
+   ========================================================= */
 
-    min-height: 100vh;
-    max-height: 100vh;
+#depoimentos {
+    position: relative;
+
     width: 100%;
+    min-height: 100vh;
+
+    background-image: url('/img/img/Imagem 3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 
-    justify-content: space-evenly;
     justify-content: center;
     align-items: center;
-    gap: 70px;
 }
 
+/* Camada escura sobre a imagem */
+#depoimentos::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+/* Conteúdo fica acima da camada escura */
+#depoimentos > * {
+    position: relative;
+    z-index: 1;
+}
+
+.area-depoimentos {
+    width: 100%;
+    height: 70vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+/* ---------- BLOCO 1 ---------- */
+
 .bloco1 {
-    border: 5px solid red;
     width: 90%;
-    line-height: 1.2;
+    height: 40%;
+
+    padding-left: 5%;
+
     display: flex;
     justify-content: center;
     align-items: center;
-}
 
-.texto-bloco1 {
-    height: 45vh;
-    border: 5px solid rgb(0, 255, 136);
-}
+    gap: 20px;
 
+    line-height: 1.2;
+}
 
 .bloco1 h1 {
-    font-size: 10px;
+    font-size: 25px;
 }
 
 .bloco1 h2 {
-    font-size: 10px;
+    font-size: 14px;
 }
 
 .bloco1 p {
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .bloco1 img {
-    height: 150px;
+    height: 100px;
+
     border-radius: 100%;
     border: 4px solid white;
-
-    gap: 20px;
 }
+
+
+/* ---------- BLOCO 2 ---------- */
 
 .bloco2 {
-    border: 5px solid blue;
-    width: 60%;
-    height: 40vh;
+    width: 90%;
+    height: 40%;
 
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+
+    justify-content: space-around;
 
     gap: 80px;
-   
+
+    text-align: left;
 }
 
-
-.texto-bloco2 {
-    border: 1px solid red;
+.texto-2 {
     display: flex;
     flex-direction: row;
+
     justify-content: center;
     align-items: center;
-    
+
     line-height: 1.2;
 }
 
-.texto-bloco2 h1 {
-    width: 100%;
-    font-size: 10px;
+.texto-2 h1 {
+    width: 90vw;
+
+    margin-left: 5%;
+
+    font-size: 25px;
 }
 
+
+/* =========================================================
+   SEÇÃO AGENDE
+   ========================================================= */
+
 #agende {
-    background-color: #b747ab;
-    min-height: 100vh;
-    max-height: 100vh;
     width: 100%;
+    min-height: 100vh;
+
+    background-color: var(--cor-primaria);
+}
+
+.textos-agende {
+    height: 50vh;
+
+    padding: 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    line-height: 1.2;
+}
+
+.textos-agende h1 {
+    font-size: 25px;
+  line-height: 1.4;
+}
+
+.textos-agende h2 {
+    font-size: 20px;
+    line-height: 1.2;
+}
+
+.topo,
+.baixo {
+    line-height: 1.2;
+}
+
+
+/* =========================================================
+   FORMULÁRIO
+   ========================================================= */
+
+.formulario {
+    height: 40vh;
+
+    margin: 15px;
+
+    padding: 10px;
+
+    background-color: var(--cor-branca);
+
+    border-radius: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    gap: 10%;
+}
+
+.nome,
+.celular,
+.email,
+.botao {
+    margin: 5%;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.celular {
+    justify-content: center;
+}
+
+input {
+    width: 100%;
+}
+
+label {
+    color: var(--cor-primaria);
+}
+
+
+/* =========================================================
+   DESKTOP
+   A partir de 768px
+   ========================================================= */
+
+@media (min-width: 768px) {
+
+    /* -----------------------------------------------------
+       CORES DESKTOP
+       ----------------------------------------------------- */
+
+    :root {
+        --cor-primaria: #000000;
+        --cor-secundaria: #15560b;
+    }
+
+
+    /* -----------------------------------------------------
+       CABEÇALHO
+       ----------------------------------------------------- */
+
+    .opcoes {
+        width: 75%;
+        height: 100%;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .lado-direito {
+        width: 40vw;
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+    /* -----------------------------------------------------
+       DESTAQUE
+       ----------------------------------------------------- */
+
+    #destaque .texto {
+        font-size: 30px;
+    }
+
+
+    /* -----------------------------------------------------
+       FUNÇÕES
+       ----------------------------------------------------- */
+
+    #funcoes {
+        background-color: var(--cor-primaria);
+    }
+
+    .textos-funcoes {
+        display: flex;
+        flex-direction: column;
+        height: 50vh;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #funcoes h1 {
+        width: 60vw;
+
+        font-size: 40px;
+
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    #funcoes h2 {
+        height: 50px;
+
+        font-size: 35px;
+    }
+
+    #funcoes p {
+        font-size: 23px;
+    }
+
+
+    /* -----------------------------------------------------
+       ESPECIFICAÇÕES
+       ----------------------------------------------------- */
+
+    #especificacoes {
+        background-color: var(--cor-primaria);
+    }
+
+    .cards-especificacoes {
+        width: 30vw;
+        height: 48vh;
+    }
+
+
+    /* -----------------------------------------------------
+       DEPOIMENTOS
+       ----------------------------------------------------- */
+
+    #depoimentos {
+        background-color: var(--cor-primaria);
+    }
+
+    .area-depoimentos {
+        width: 100%;
+
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .bloco1 {
+        width: 55vw;
+        height: 60vh;
+
+        padding: 0;
+    }
+
+    .bloco1 img {
+        height: 350px;
+    }
+
+    .texto-1 {
+        width: 30vw;
+    }
+
+    .texto-1 h1 {
+        font-size: 40px;
+    }
+
+    .texto-1 h2 {
+        font-size: 25px;
+    }
+
+    .texto-1 p {
+        font-size: 15px;
+    }
+
+    .bloco2 {
+        width: 30vw;
+        height: 60vh;
+    }
+
+    .texto-2 h1 {
+        width: 100%;
+
+        font-size: 40px;
+    }
+
+
+    /* -----------------------------------------------------
+       AGENDE
+       ----------------------------------------------------- */
+
+    #agende {
+        background-color: var(--cor-primaria);
+
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+
+        gap: 5vw;
+    }
+
+    .textos-agende {
+        width: 50vw;
+        height: 90vh;
+
+        
+    }
+
+    .topo h1 {
+        font-size: 40px;
+        line-height: 1.4;
+    }
+
+    .topo h2 {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    .meio p,
+    .baixo p {
+        font-size: 25px;
+        line-height: 1.4;
+    }
+
+    .formulario {
+        width: 35%;
+
+        border-radius: 10px;
+    }
 }
